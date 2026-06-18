@@ -1,0 +1,60 @@
+.contacto {
+    width: min(100%, 70rem);
+    margin: 0 auto;
+    padding: clamp(5rem, 11vw, 8rem) clamp(1.5rem, 6vw, 4rem) clamp(4rem, 8vw, 6rem);
+    color: #FFFFFF;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.contacto h2 {
+    margin-bottom: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    font-weight: 500;
+}
+
+.contacto-texto {
+    max-width: 44rem;
+    margin-bottom: 1.8rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: clamp(0.95rem, 1.7vw, 1.05rem);
+    line-height: 1.7;
+}
+
+.contacto-email {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    color: #FFFFFF;
+    font-size: clamp(0.95rem, 1.7vw, 1.05rem);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto-email:hover {
+    color: #9D6BFF;
+}
+
+.contacto-redes {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.contacto-redes a {
+    display: grid;
+    place-items: center;
+    width: 1.35rem;
+    aspect-ratio: 1;
+    color: #FFFFFF;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contacto-redes a:hover {
+    color: #9D6BFF;
+    transform: translateY(-0.15rem);
+}
+
+.contacto-redes svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}

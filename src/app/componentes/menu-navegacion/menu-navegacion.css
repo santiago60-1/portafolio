@@ -1,0 +1,58 @@
+
+
+:host {
+    display: block;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: clamp(1rem, 3vw, 2rem);
+    background-color: #1A0B2E;
+    padding: 1.25rem clamp(1.5rem, 6vw, 4rem);
+    color: #FFFFFF;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #FFFFFF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: #C77DFF;
+    transform: translateY(-2px);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+img.logo {
+    width: clamp(2.25rem, 5vw, 3rem);
+    height: clamp(2.25rem, 5vw, 3rem);
+    margin-right: auto;
+    background-color: transparent;
+    object-fit: contain;
+}

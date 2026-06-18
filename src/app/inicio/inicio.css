@@ -1,0 +1,273 @@
+.inicio-hero {
+    width: min(100%, 70rem);
+    margin: 0 auto;
+    padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 4rem);
+    color: #FFFFFF;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: clamp(2rem, 6vw, 4rem);
+}
+
+.avatar-contenedor {
+    position: relative;
+    flex: 0 0 clamp(12rem, 24vw, 18rem);
+}
+
+.avatar-contenedor::before {
+    content: "";
+    position: absolute;
+    inset: 12% 2% 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(118, 60, 172, 0.7), rgba(118, 60, 172, 0));
+    filter: blur(1rem);
+}
+
+.profile-pic {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.arrow-pic {
+    position: absolute;
+    top: -5%;
+    right: -34%;
+    width: clamp(3.25rem, 7vw, 5.25rem);
+    transform: rotate(-4deg);
+    opacity: 0.85;
+}
+
+.intro {
+    max-width: 37rem;
+}
+
+.saludo {
+    margin-bottom: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.saludo span,
+.palabra-destacada {
+    color: #8A3FFC;
+}
+
+.rol {
+    width: fit-content;
+    margin-bottom: 0.4rem;
+    border-bottom: 0.08rem solid #FFFFFF;
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+}
+
+.intro h1 {
+    max-width: 34rem;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.palabra-destacada {
+    position: relative;
+    display: inline-block;
+}
+
+.ellipse-pic {
+    position: absolute;
+    left: -10%;
+    top: 0.1em;
+    z-index: 2;
+    width: 120%;
+    height: 1.13em;
+    pointer-events: none;
+}
+
+.subtitulo {
+    margin-top: 0.6rem;
+    font-size: clamp(0.85rem, 1.5vw, 1rem);
+}
+
+.descripcion {
+    margin-top: clamp(5rem, 10vw, 8rem);
+}
+
+.descripcion h2 {
+    margin-bottom: 0.6rem;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.descripcion p {
+    max-width: 62rem;
+    font-size: clamp(1.1rem, 2.4vw, 1.45rem);
+    line-height: 1.6;
+}
+
+.actualidad {
+    margin-bottom: clamp(3rem, 8vw, 5rem);
+}
+
+.experiencia {
+    position: relative;
+    margin-top: clamp(5rem, 10vw, 8rem);
+    padding-bottom: clamp(2rem, 6vw, 4rem);
+}
+
+.experiencia::before {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    z-index: -1;
+    width: min(42rem, 70vw);
+    aspect-ratio: 1;
+    border: 0.08rem solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(118, 60, 172, 0.45), rgba(17, 7, 31, 0) 65%);
+    transform: translateX(-50%);
+}
+
+.experiencia h2 {
+    margin-bottom: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 500;
+}
+
+.experiencia-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 1.4rem);
+}
+
+.experiencia-card {
+    display: flex;
+    align-items: center;
+    gap: clamp(1rem, 3vw, 2rem);
+    min-height: clamp(9rem, 16vw, 11rem);
+    padding: clamp(1.2rem, 3vw, 2rem);
+    border-top: 0.18rem solid #6930C3;
+    border-radius: 0.6rem;
+    background:
+        radial-gradient(circle at 35% 40%, rgba(110, 45, 190, 0.55), transparent 35%),
+        linear-gradient(110deg, #19052F, #2A0C4E 55%, #170426);
+    box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25);
+}
+
+.tecnologia-imagen {
+    display: grid;
+    flex: 0 0 clamp(5.5rem, 12vw, 8rem);
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(138, 63, 252, 0.45), rgba(22, 6, 42, 0.85) 65%);
+}
+
+.tecnologia-imagen img {
+    width: 78%;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.experiencia-contenido h3 {
+    margin-bottom: 0.35rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+    line-height: 1.15;
+}
+
+.experiencia-contenido p {
+    max-width: 25rem;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: clamp(0.78rem, 1.4vw, 0.9rem);
+    line-height: 1.5;
+}
+
+.experiencia-contenido a {
+    display: inline-block;
+    padding: 0.55rem 1.6rem;
+    border: 0.08rem solid rgba(255, 255, 255, 0.35);
+    border-radius: 0.55rem;
+    color: #FFFFFF;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.experiencia-contenido a:hover {
+    border-color: #8A3FFC;
+    background-color: rgba(138, 63, 252, 0.22);
+    transform: translateY(-0.12rem);
+}
+
+.skills {
+    position: relative;
+    margin-top: clamp(5rem, 10vw, 8rem);
+    padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 6vw, 4rem);
+    text-align: center;
+    background-color: transparent;
+}
+
+.skills h2 {
+    margin-bottom: clamp(2rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 500;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.skill-item {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.skill-item::before,
+.skill-item::after {
+    content: none;
+}
+
+.skill-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: clamp(28rem, 90vw, 60rem);
+    mix-blend-mode: screen; /* fusiona el fondo oscuro de la imagen con la página */
+}
+
+/* ← si el ::after era para tapar algo de la imagen, ajusta o elimina */
+.skill-item::after {
+    content: none;
+}
+
+@media (max-width: 52rem) {
+    .presentacion,
+    .experiencia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
